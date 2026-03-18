@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(echo:*)",
+      "Bash(pg_isready 2>/dev/null && echo \"Postgres running\" || echo \"Postgres not running\" && psql --version 2>/dev/null || echo \"psql: not found\" && brew services list 2>/dev/null | grep postgres || echo \"no brew postgres service\")",
+      "Bash(brew:*)",
+      "Bash(brew services:*)",
+      "Bash(/opt/homebrew/opt/postgresql@15/bin/psql postgres:*)",
+      "Bash(cd:*)",
+      "Bash(source:*)",
+      "Bash(sleep:*)",
+      "Bash(pkill:*)",
+      "Bash(curl:*)",
+      "Bash(npm run:*)",
+      "Bash(tail:*)",
+      "Bash(grep:*)",
+      "Bash(python3:*)",
+      "Bash(npm install:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
